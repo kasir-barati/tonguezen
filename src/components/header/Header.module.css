@@ -1,0 +1,23 @@
+.header {
+  background-color: lightseagreen;
+  background: radial-gradient(
+    circle,
+    turquoise 0%,
+    turquoise 13%,
+    navy 30%,
+    turquoise 80%,
+    navy 100%
+  );
+  border-radius: var(--general-border-radios);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 160px;
+}
+
+.header span {
+  text-shadow: 5px 5px 5px lightgreen, -5px -5px 5px lightgreen,
+    -5px 5px 5px lightgreen, 5px -5px 5px lightgreen;
+  font-size: 73px;
+  font-weight: 900;
+}
