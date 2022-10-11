@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: var(--general-border-radios);
+  background-color: aquamarine;
+  background: radial-gradient(aquamarine, lightskyblue, turquoise);
+}
