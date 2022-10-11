@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+  --general-border-radios: 20px;
+  --menu-height: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: blue;
+  background: linear-gradient(blue, white 600px, white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+  width: 960px;
+  background-color: silver;
+  border-radius: var(--general-border-radios);
+  padding: 5px;
+  margin: 5px auto 5px auto;
+  background: linear-gradient(
+    white 0px,
+    rgb(127, 147, 158) 600px,
+    rgb(127, 147, 158)
+  );
+  box-shadow: 5px 5px 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+.pl-25 {
+  padding-left: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.my-10 {
+  margin: 10px 0 10px 0;
+}
+
+.mx-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.top-border-radius {
+  border-radius: var(--general-border-radios) var(--general-border-radios) 0 0;
 }
