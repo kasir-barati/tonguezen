@@ -4,6 +4,8 @@ import MainClasses from "./Main.module.css";
 import Navbar from "../navbar/Navbar";
 import { NavbarItem } from "../navbar/Navbar.type";
 import Posts from "../posts/Posts";
+import Sidebar from "../sidebars/Sidebars";
+import { SidebarItem } from "../sidebars/Sidebar.type";
 
 export default function Main() {
   const navbarItems: NavbarItem[] = [
@@ -43,11 +45,33 @@ export default function Main() {
       children: [{ text: "Something", pageUrl: "#" }],
     },
   ];
+  const sidebarItems: SidebarItem[] = [
+    {
+      title: "Latest articles",
+      pageUrl: "#",
+      content: "Leader make mistake",
+    },
+    {
+      title: "Latest articles",
+      pageUrl: "#",
+      contentList: [
+        {
+          pageUrl: "#",
+          text: "Justice is good",
+        },
+        {
+          pageUrl: "#",
+          text: "Friends are good",
+        },
+      ],
+    },
+  ];
 
   return (
     <main className={`${MainClasses.main} mb-5`}>
       <Navbar items={navbarItems}></Navbar>
       <Posts></Posts>
+      <Sidebar items={sidebarItems}></Sidebar>
     </main>
   );
 }
