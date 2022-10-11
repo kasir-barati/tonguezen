@@ -1,0 +1,5 @@
+.posts {
+  width: 414px;
+  background-color: lightslategray;
+  border-radius: var(--general-border-radios);
+}

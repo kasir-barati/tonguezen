@@ -3,6 +3,7 @@ import React from "react";
 import MainClasses from "./Main.module.css";
 import Navbar from "../navbar/Navbar";
 import { NavbarItem } from "../navbar/Navbar.type";
+import Posts from "../posts/Posts";
 
 export default function Main() {
   const navbarItems: NavbarItem[] = [
@@ -46,6 +47,7 @@ export default function Main() {
   return (
     <main className={`${MainClasses.main} mb-5`}>
       <Navbar items={navbarItems}></Navbar>
+      <Posts></Posts>
     </main>
   );
 }

@@ -1,0 +1,71 @@
+.post {
+  width: 100%;
+  border-radius: var(--general-border-radios);
+  background-color: white;
+}
+
+.postHeader {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--general-border-radios) var(--general-border-radios) 0 0;
+  background-color: lightsteelblue;
+  background: linear-gradient(lightsteelblue, lightblue, skyblue);
+}
+
+.postHeaderLink {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-shadow: 4px 4px 4px whitesmoke;
+  transition-duration: 1s;
+}
+
+.postHeaderLink:hover {
+  color: slategray;
+}
+
+.postDate {
+  height: 30px;
+  background-color: lightsteelblue;
+  background: linear-gradient(skyblue, lightsteelblue, lightblue, white);
+  font-weight: 600;
+}
+
+.postDescription {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.postDescription p {
+  text-align: justify;
+}
+
+.postFooter {
+  width: 100%;
+  background-color: lightgreen;
+  background: linear-gradient(white, lightgreen, lightseagreen);
+  height: 35px;
+  border-radius: 0 0 var(--general-border-radios) var(--general-border-radios);
+}
+
+.postLink {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  width: 150px;
+  height: 25px;
+  background-color: lightcyan;
+  border-radius: 13px 7px 13px 7px;
+  box-shadow: 3px 3px 7px black;
+  transition-duration: 1s;
+}
+
+.postLink:hover {
+  border-radius: 7px 13px 7px 13px;
+  color: darkslategray;
+}
