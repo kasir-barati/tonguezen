@@ -1,8 +1,8 @@
 import React from "react";
 
 import PostsClasses from "./Posts.module.css";
-import Post from "../post/Post";
-import { PostData } from "../post/Post.type";
+import Post from "./post/Post";
+import { PostData } from "./post/Post.type";
 
 export default function Posts() {
   const posts: PostData[] = [
